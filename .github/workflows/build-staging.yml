@@ -60,7 +60,7 @@ jobs:
             version: v3.3.1
             
         - name: Get AKS Credentials
-          uses: Azure/k8s-set-context@v3.0
+          uses: Azure/aks-set-context@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
             # Azure resource group name
